@@ -19,7 +19,6 @@ amazon_header = {
     "Connection": "close"
 }
 
-proxies_list = [""]
 timeout = 10
 
 try:
