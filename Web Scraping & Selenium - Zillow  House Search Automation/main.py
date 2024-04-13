@@ -36,8 +36,7 @@ class HouseSearch:
 
     def fill_the_form(self):
         for i in range(0, len(self.second_clean_section_by_symbol)):
-            self.driver.get("https://docs.google.com/forms/d/e/1FAIpQLScMuydxX12B2mUzmQ5M27_quuVr9hlI0e5HArOWA73haDdfpA"
-                            "/viewform?usp=sf_link")
+            self.driver.get("https://docs.google.com/forms/d/e/1FAIpQLScMuydxX12B2mUzmQ5M27_quuVr9hlI0e5HArOWA73haDdfpA/viewform?usp=sf_link")
             address_field = self.driver.find_element(By.XPATH, value='//*[@id="mG61Hd"]/div[2]/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div/div[1]/input')
             time.sleep(1)
             address_field.send_keys(f"{self.addresses[i]}"), Keys.TAB
